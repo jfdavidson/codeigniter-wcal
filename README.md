@@ -13,10 +13,10 @@ Because ISO weeks can split months, I've changed the day labels to show the mont
 $this->load->library('wcal');
 
 $data = array(
-        2016-08-08  => 'http://example.com/news/article/2016/08/08/',
-        2006-08-10  => 'http://example.com/news/article/2016/08/10/',
-        2006-08-12 => 'http://example.com/news/article/2016/08/12/',
-        2006-08-14 => 'http://example.com/news/article/2016/08/14/'
+        '2016-08-08'  => 'http://example.com/news/article/2016/08/08/',
+        '2006-08-10'  => 'http://example.com/news/article/2016/08/10/',
+        '2006-08-12' => 'http://example.com/news/article/2016/08/12/',
+        '2006-08-14' => 'http://example.com/news/article/2016/08/14/'
 );
 
 echo $this->wcal->generate(2016, 32, $data);
@@ -34,7 +34,7 @@ $this->load->library('wcal');
 ```
 To generate
 ```PHP
-$this->wcal->generate(); --this will show the current ISO week. 
+$this->wcal->generate(); //this will show the current ISO week. 
 
-$this->wcal->generate(2016, 32, $data); --this will show ISO week 32 of 2016 
+$this->wcal->generate(2016, 32, $data); //this will show ISO week 32 of 2016 
 ```
